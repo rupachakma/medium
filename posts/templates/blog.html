@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for i in posts%}
+    <div class="container">
+        <img src="{{i.coverimage.url}}" alt="" width="150px">
+        <h2>{{i.title}}</h2>
+         <h3>{{i.tagline}}</h3>
+         <p>{{i.description}}</p>
+         
+    </div>
+    {% endfor %} 
+    
+</body>
+</html>
